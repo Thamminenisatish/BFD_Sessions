@@ -1,0 +1,972 @@
+c t
+set gvrp disable
+set gmrp disable
+shutdown garp
+shutdown spanning-tree
+end
+
+c t
+int gi 0/1
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/2
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/3
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/4
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/5
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/6
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/7
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/8
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/9
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/10
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/11
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/12
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/13
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/14
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/15
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/16
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/17
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/18
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/19
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/20
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/21
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/22
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/23
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/24
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/25
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/26
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/27
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/28
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/29
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/30
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/31
+map switch default
+no shutdown
+end
+
+c t
+int gi 0/32
+map switch default
+no shutdown
+end
+
+c t
+vlan 1
+no ports
+end
+
+c t
+vlan 5
+ports add gi 0/1 untagged gi 0/1
+end
+
+c t
+int gi 0/1
+switchport pvid 5
+end
+
+c t
+int vlan 5
+ip address 5.0.0.1 255.0.0.0
+no shut
+end
+
+c t
+vlan 6
+ports add gi 0/2 untagged gi 0/2
+end
+
+c t
+int gi 0/2
+switchport pvid 6
+end
+
+c t
+int vlan 6
+ip address 6.0.0.1 255.0.0.0
+no shut
+end
+
+c t
+vlan 7
+ports add gi 0/3 untagged gi 0/3
+end
+
+c t
+int gi 0/3
+switchport pvid 7
+end
+
+c t
+int vlan 7
+ip address 7.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 8
+ports add gi 0/4 untagged gi 0/4
+end
+
+c t
+int gi 0/4
+switchport pvid 8
+end
+
+c t
+int vlan 8
+ip address 8.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 9
+ports add gi 0/5 untagged gi 0/5
+end
+
+c t
+int gi 0/5
+switchport pvid 9
+end
+
+c t
+int vlan 9
+ip address 9.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 10
+ports add gi 0/6 untagged gi 0/6
+end
+
+c t
+int gi 0/6
+switchport pvid 10
+end
+
+c t
+int vlan 10
+ip address 10.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 11
+ports add gi 0/7 untagged gi 0/7
+end
+
+c t
+int gi 0/7
+switchport pvid 11
+end
+
+c t
+int vlan 11
+ip address 11.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 8
+ports add gi 0/4 untagged gi 0/4
+end
+
+c t
+int gi 0/4
+switchport pvid 8
+end
+
+c t
+int vlan 8
+ip address 8.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 9
+ports add gi 0/5 untagged gi 0/5
+end
+
+c t
+int gi 0/5
+switchport pvid 9
+end
+
+c t
+int vlan 9
+ip address 9.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 10
+ports add gi 0/6 untagged gi 0/6
+end
+
+c t
+int gi 0/6
+switchport pvid 10
+end
+
+c t
+int vlan 10
+ip address 10.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 11
+ports add gi 0/7 untagged gi 0/7
+end
+
+c t
+int gi 0/7
+switchport pvid 11
+end
+
+c t
+int vlan 11
+ip address 11.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 12
+ports add gi 0/8 untagged gi 0/8
+end
+
+c t
+int gi 0/8
+switchport pvid 12
+end
+
+c t
+int vlan 12
+ip address 12.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 13
+ports add gi 0/9 untagged gi 0/9
+end
+
+c t
+int gi 0/9
+switchport pvid 13
+end
+
+c t
+int vlan 13
+ip address 13.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 14
+ports add gi 0/10 untagged gi 0/10
+end
+
+c t
+int gi 0/10
+switchport pvid 14
+end
+
+c t
+int vlan 14
+ip address 14.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 15
+ports add gi 0/11 untagged gi 0/11
+end
+
+c t
+int gi 0/11
+switchport pvid 15
+end
+
+c t
+int vlan 15
+ip address 15.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 16
+ports add gi 0/12 untagged gi 0/12
+end
+
+c t
+int gi 0/12
+switchport pvid 16
+end
+
+c t
+int vlan 16
+ip address 16.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 17
+ports add gi 0/13 untagged gi 0/13
+end
+
+c t
+int gi 0/13
+switchport pvid 17
+end
+
+c t
+int vlan 17
+ip address 17.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 18
+ports add gi 0/14 untagged gi 0/14
+end
+
+c t
+int gi 0/14
+switchport pvid 18
+end
+
+c t
+int vlan 18
+ip address 18.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 19
+ports add gi 0/15 untagged gi 0/15
+end
+
+c t
+int gi 0/15
+switchport pvid 19
+end
+
+c t
+int vlan 19
+ip address 19.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 20
+ports add gi 0/16 untagged gi 0/16
+end
+
+c t
+int gi 0/16
+switchport pvid 20
+end
+
+c t
+int vlan 20
+ip address 20.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 21
+ports add gi 0/17 untagged gi 0/17
+end
+
+c t
+int gi 0/17
+switchport pvid 21
+end
+
+c t
+int vlan 21
+ip address 21.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 22
+ports add gi 0/18 untagged gi 0/18
+end
+
+c t
+int gi 0/18
+switchport pvid 22
+end
+
+c t
+int vlan 22
+ip address 22.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 23
+ports add gi 0/19 untagged gi 0/19
+end
+
+c t
+int gi 0/19
+switchport pvid 23
+end
+
+c t
+int vlan 23
+ip address 23.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 24
+ports add gi 0/20 untagged gi 0/20
+end
+
+c t
+int gi 0/20
+switchport pvid 24
+end
+
+c t
+int vlan 24
+ip address 24.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 25
+ports add gi 0/21 untagged gi 0/21
+end
+
+c t
+int gi 0/21
+switchport pvid 25
+end
+
+c t
+int vlan 25
+ip address 25.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 26
+ports add gi 0/22 untagged gi 0/22
+end
+
+c t
+int gi 0/22
+switchport pvid 26
+end
+
+c t
+int vlan 26
+ip address 26.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 27
+ports add gi 0/23 untagged gi 0/23
+end
+
+c t
+int gi 0/23
+switchport pvid 27
+end
+
+c t
+int vlan 27
+ip address 27.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 28
+ports add gi 0/24 untagged gi 0/24
+end
+
+c t
+int gi 0/24
+switchport pvid 28
+end
+
+c t
+int vlan 28
+ip address 28.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 29
+ports add gi 0/25 untagged gi 0/25
+end
+
+c t
+int gi 0/25
+switchport pvid 29
+end
+
+c t
+int vlan 29
+ip address 29.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 30
+ports add gi 0/26 untagged gi 0/26
+end
+
+c t
+int gi 0/26
+switchport pvid 30
+end
+
+c t
+int vlan 30
+ip address 30.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 31
+ports add gi 0/27 untagged gi 0/27
+end
+
+c t
+int gi 0/27
+switchport pvid 31
+end
+
+c t
+int vlan 31
+ip address 31.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 32
+ports add gi 0/28 untagged gi 0/28
+end
+
+c t
+int gi 0/28
+switchport pvid 32
+end
+
+c t
+int vlan 32
+ip address 32.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 33
+ports add gi 0/29 untagged gi 0/29
+end
+
+c t
+int gi 0/29
+switchport pvid 33
+end
+
+c t
+int vlan 33
+ip address 33.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 34
+ports add gi 0/30 untagged gi 0/30
+end
+
+c t
+int gi 0/30
+switchport pvid 34
+end
+
+c t
+int vlan 34
+ip address 34.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 35
+ports add gi 0/31 untagged gi 0/31
+end
+
+c t
+int gi 0/31
+switchport pvid 35
+end
+
+c t
+int vlan 35
+ip address 35.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+vlan 36
+ports add gi 0/32 untagged gi 0/32
+end
+
+c t
+int gi 0/32
+switchport pvid 36
+end
+
+c t
+int vlan 36
+ip address 36.0.0.2 255.0.0.0
+no shut
+end
+
+
+c t
+bfd session 1
+bfd ipv4 5.0.0.1 vlan 5
+bfd enable
+end
+
+c t
+bfd session 2
+bfd ipv4 6.0.0.1 vlan 6
+bfd enable
+end
+
+c t
+bfd session 3
+bfd ipv4 7.0.0.1 vlan 7
+bfd enable
+end
+
+c t
+bfd session 4
+bfd ipv4 8.0.0.1 vlan 8
+bfd enable
+end
+
+c t
+bfd session 5
+bfd ipv4 9.0.0.1 vlan 9
+bfd enable
+end
+
+c t
+bfd session 6
+bfd ipv4 10.0.0.1 vlan 10
+bfd enable
+end
+
+c t
+bfd session 7
+bfd ipv4 11.0.0.1 vlan 11
+bfd enable
+end
+
+c t
+bfd session 8
+bfd ipv4 12.0.0.1 vlan 12
+bfd enable
+end
+
+c t
+bfd session 9
+bfd ipv4 13.0.0.1 vlan 13
+bfd enable
+end
+
+c t
+bfd session 10
+bfd ipv4 14.0.0.1 vlan 14
+bfd enable
+end
+
+c t
+bfd session 11
+bfd ipv4 15.0.0.1 vlan 15
+bfd enable
+end
+
+c t
+bfd session 12
+bfd ipv4 16.0.0.1 vlan 16
+bfd enable
+end
+
+c t
+bfd session 13
+bfd ipv4 17.0.0.1 vlan 17
+bfd enable
+end
+
+c t
+bfd session 14
+bfd ipv4 18.0.0.1 vlan 18
+bfd enable
+end
+
+c t
+bfd session 15
+bfd ipv4 19.0.0.1 vlan 19
+bfd enable
+end
+
+c t
+bfd session 16
+bfd ipv4 20.0.0.1 vlan 20
+bfd enable
+end
+
+c t
+bfd session 17
+bfd ipv4 21.0.0.1 vlan 21
+bfd enable
+end
+
+c t
+bfd session 18
+bfd ipv4 22.0.0.1 vlan 22
+bfd enable
+end
+
+c t
+bfd session 19
+bfd ipv4 23.0.0.1 vlan 23
+bfd enable
+end
+
+c t
+bfd session 20
+bfd ipv4 24.0.0.1 vlan 24
+bfd enable
+end
+
+c t
+bfd session 21
+bfd ipv4 25.0.0.1 vlan 25
+bfd enable
+end
+
+c t
+bfd session 22
+bfd ipv4 26.0.0.1 vlan 26
+bfd enable
+end
+
+c t
+bfd session 23
+bfd ipv4 27.0.0.1 vlan 27
+bfd enable
+end
+
+c t
+bfd session 24
+bfd ipv4 28.0.0.1 vlan 28
+bfd enable
+end
+
+c t
+bfd session 25
+bfd ipv4 29.0.0.1 vlan 29
+bfd enable
+end
+
+c t
+bfd session 26
+bfd ipv4 30.0.0.1 vlan 30
+bfd enable
+end
+
+c t
+bfd session 27
+bfd ipv4 31.0.0.1 vlan 31
+bfd enable
+end
+
+c t
+bfd session 28
+bfd ipv4 32.0.0.1 vlan 32
+bfd enable
+end
+
+c t
+bfd session 29
+bfd ipv4 33.0.0.1 vlan 33
+bfd enable
+end
+
+c t
+bfd session 30
+bfd ipv4 34.0.0.1 vlan 34
+bfd enable
+end
+
+c t
+bfd session 31
+bfd ipv4 35.0.0.1 vlan 35
+bfd enable
+end
+
+c t
+bfd session 32
+bfd ipv4 36.0.0.1 vlan 36
+bfd enable
+end

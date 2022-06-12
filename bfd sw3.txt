@@ -1,0 +1,60 @@
+configure terminal
+set gvrp disable
+set gmrp disable
+shutdown garp
+shutdown spanning-tree
+end
+
+c t
+int gi 0/1
+map switch default
+no shut
+end
+
+c t
+int gi 0/2
+map switch default
+no shut
+end
+
+c t
+vlan 1
+no ports
+end
+
+c t
+vlan 21
+ports add gi 0/1 untagged gi 0/1
+end
+
+c t
+int gi 0/1
+switchport pvid 21
+end
+
+c t
+int vlan 21
+ip address 21.0.0.2 255.0.0.0
+no shut
+end
+
+c t
+int gi 0/2
+shut
+no map switch default
+no switch
+ip address 22.0.0.2 255.0.0.0 
+no shut
+end
+
+c t
+bfd session 1
+bfd ipv4 21.0.0.1 vlan 21
+bfd enable
+end
+
+c t
+bfd session 2
+bfd ipv4 22.0.0.1 gi 0/2
+bfd enable
+end

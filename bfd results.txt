@@ -1,0 +1,12 @@
+ISS# BFD:  [BFD][MGMT]BFD Session UP for Session index - 7 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 9 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 10 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 4 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 15 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 12 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 5 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 13 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 11 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 6 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 14 in ContextId- 0
+BFD:  [BFD][MGMT]BFD Session UP for Session index - 3 in ContextId- 0
